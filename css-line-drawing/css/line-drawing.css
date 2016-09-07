@@ -1,0 +1,306 @@
+body,
+div {
+	margin: 0;
+	padding: 0;
+}
+/*简笔画容器样式*/
+#container {
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -200px;
+	margin-left: -150px;
+}
+
+/*天鹅的头部样式*/
+.head-container {
+	width: 140px;
+	height: 140px;
+	position: relative;
+}
+.head1 {
+	width: 100px;
+	height: 140px;
+	background-color: #fff;
+	border: 10px solid #58F3F1;
+	border-top-left-radius: 87% 118%;
+	border-top-right-radius: 76%;
+	border-bottom-right-radius: 49% 86%;
+}
+.head2 {
+	width: 100px;
+	height: 89px;
+	background-color: white;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	margin-bottom: -20px;
+}
+.mouth1 {
+	position: absolute;
+    top: 68px;
+    left: 6px;
+    border-left: 10px solid #58F3F1;
+    width: 20px;
+    height: 17px;
+    border-bottom-left-radius: 67% 100%;
+}
+.mouth2 {
+	position: absolute;
+    top: 80px;
+    left: 10px;
+    border: 8px solid #58F3F1;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-top-width: 19px;
+    transform: rotate(18deg);
+}
+.mouth3 {
+	position: absolute;
+    top: 90px;
+    left: 11px;
+    border-left: 5px solid #58F3F1;
+    width: 20px;
+    height: 24px;
+    border-bottom-left-radius: 35% 100%;
+    transform: rotate(29deg);
+}
+.eye {
+	position: absolute;
+    top: 62px;
+    left: 25px;
+    width: 12px;
+    height: 12px;
+    background-color: #58F3F1;
+    border-radius: 50%;
+    -webkit-animation: blink 2s linear infinite;/*天鹅眨眼动画*/
+    animation: blink 2s linear infinite;
+}
+@-webkit-keyframes blink {
+	90%{-webkit-transform: scaley(1);}
+	100%{-webkit-transform: scaley(0);}
+}
+@keyframes blink {
+	90%{transform: scaley(1);}
+	100%{transform: scaley(0);}
+}
+
+/*天鹅的躯干样式*/
+.body-container {
+	width: 200px;
+	height: 232px;
+	overflow: hidden;
+}
+.neck {
+	position: absolute;
+    left: 81px;
+    top: 136px;
+    width: 30px;
+    height: 40px;
+    border: 10px solid #58F3F1;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    transform: rotate(37deg);
+    z-index: 3;
+}
+.body {
+	position: relative;
+    left: 38px;
+    top: -13px;
+    width: 260px;
+    height: 260px;
+    background-color: #fff;
+    border: 10px solid #58F3F1;
+    border-top-left-radius: 86% 98%;
+    border-bottom-left-radius: 190% 101%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    z-index: 2;
+}
+
+/*天鹅的翅膀样式*/
+.wing-container {
+	position: absolute;
+    top: 88px;
+    left: 81px;
+    width: 276px;
+    height: 255px;
+    z-index: 4;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.wing-front {
+	width: 276px;
+	height: 255px;
+	-webkit-animation: swing 2s ease-in-out infinite;/*天鹅的翅膀动画*/
+	animation: swing 2s ease-in-out infinite;
+	-webkit-transform-origin:10% bottom;
+	transform-origin:10% bottom;
+}
+@-webkit-keyframes swing {
+	40%{-webkit-transform: rotateY(0deg) rotateZ(0deg);}
+	70%{-webkit-transform: rotateY(-25deg) rotateZ(-5deg);}
+	90%{-webkit-transform: rotateY(25deg) rotateZ(5deg);}
+}
+@keyframes swing {
+	40%{transform: rotateY(0deg) rotateZ(0deg);}
+	70%{transform: rotateY(-25deg) rotateZ(-5deg);}
+	90%{transform: rotateY(25deg) rotateZ(5deg);}
+}
+.wing1 {
+	position: absolute;
+    top: 216px;
+    left: -2px;
+    width: 20px;
+    border-top: 16px solid #58F3F1;
+    border-left: 24px solid transparent;
+    transform: rotate(-61deg);
+}
+.wing2 {
+	position: absolute;
+    left: 26px;
+    top: 157px;
+    width: 16px;
+    height: 54px;
+    border-left: 15px solid #58F3F1;
+    transform: rotate(8deg);
+}
+.wing3 {
+	position: absolute;
+    top: 87px;
+    left: 40px;
+    border-top: 15px solid #58F3F1;
+    width: 81px;
+    height: 69px;
+    border-top-right-radius: 100%;
+    transform: rotate(-75deg);
+}
+.wing4 {
+	position: absolute;
+    top: 32px;
+    left: 69px;
+    border-bottom: 8px solid #58F3F1;
+    width: 139px;
+    height: 58px;
+    border-bottom-right-radius: 100%;
+    transform: rotate(-12deg);
+}
+.wing5 {
+	position: absolute;
+    top: 47px;
+    left: 112px;
+    border-bottom: 8px solid #58F3F1;
+    border-left: 5px solid transparent;
+    width: 59px;
+    height: 58px;
+    border-bottom-right-radius: 79% 36%;
+    transform: rotate(-21deg);
+}
+.wing6 {
+	position: absolute;
+    top: 79px;
+    left: 71px;
+    border-bottom: 8px solid #58F3F1;
+    border-left: 17px solid transparent;
+    width: 98px;
+    height: 58px;
+    border-bottom-right-radius: 83% 58%;
+    transform: rotate(-11deg);
+}
+.wing7 {
+	position: absolute;
+    top: 101px;
+    left: 78px;
+    border-bottom: 8px solid #58F3F1;
+    border-left: 23px solid transparent;
+    width: 86px;
+    height: 58px;
+    border-bottom-right-radius: 70% 56%;
+    transform: rotate(-15deg);
+}
+.wing8 {
+	position: absolute;
+    top: 135px;
+    left: 61px;
+    border-bottom: 8px solid #58F3F1;
+    border-left: 23px solid transparent;
+    width: 69px;
+    height: 58px;
+    border-bottom-right-radius: 75% 40%;
+    transform: rotate(-10deg);
+}
+.wing9 {
+	position: absolute;
+    top: 57px;
+    left: 57px;
+    border-left: 31px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 42px solid #58F3F1;
+    transform: rotate(-16deg);  
+}
+.wing10 {
+	position: absolute;
+    top: 70px;
+    left: 64px;
+    border-left: 21px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 30px solid #fff;
+    transform: rotate(-16deg);  
+}
+.wing11 {
+	position: absolute;
+    top: 105px;
+    left: 52px;
+    width: 9px;
+    border-top: 4px solid #58F3F1;
+    border-left: 12px solid transparent;
+    transform: rotate(-55deg);
+}
+
+/*水波的样式*/
+.wave1 {
+	position: absolute;
+    top: 344px;
+    left: 30px;
+    width: 224px;
+    height: 26px;
+    border: 5px solid #58F3F1;
+    border-radius: 100%;
+    z-index: 1;
+    -webkit-animation: waves1 3.5s ease-in infinite;/*内圈水波动画*/
+    animation: waves1 3.5s ease-in infinite;
+}
+@-webkit-keyframes waves1 {
+	20%{-webkit-transform: scale(1);}
+	50%{-webkit-transform: scale(1.1);}
+}
+@keyframes waves1 {
+	20%{transform: scale(1);}
+	50%{transform: scale(1.1);}
+}
+.wave2 {
+	position: absolute;
+    top: 338px;
+    left: -11px;
+    width: 309px;
+    height: 43px;
+    border: 5px solid #58F3F1;
+    border-top-color: transparent;
+    border-radius: 100%;
+    -webkit-animation: waves2 3.5s ease-out infinite;/*外圈水波动画*/
+    animation: waves2 3.5s ease-out infinite;
+}
+@-webkit-keyframes waves2 {
+	20%{-webkit-transform: scale(1);border-width: 5px;opacity: 1;}
+	50%{-webkit-transform: scale(1.8);border-width: 8px;opacity: 0;}
+	95%{opacity: 0;}
+}
+@keyframes waves2 {
+	20%{transform: scale(1);border-width: 5px;opacity: 1;}
+	50%{transform: scale(1.8);border-width: 8px;opacity: 0;}
+	95%{opacity: 0;}
+}

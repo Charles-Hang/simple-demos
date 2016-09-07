@@ -1,0 +1,116 @@
+
+body {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding: 0;
+	background-image: url(../img/back.gif);
+} 
+ul,
+li,
+p {
+	margin: 0;
+	padding: 0;
+}
+td {
+	padding: 2px;
+}
+input,
+textarea {
+	outline: none;
+}
+
+/*外部容器样式*/
+#container {
+	width: 710px;
+	background-color: #fff;
+	margin: 0 auto;
+	border-radius: 25px;
+}
+
+/*头部样式*/
+#header {
+	height: 82px;
+	position: relative;
+}
+.header-index {
+	display: block;
+	margin-left: 29px; 
+}
+#header ul {
+	float: right;
+	position: absolute;
+	right: 29px;
+	bottom: 0;
+	list-style: none;
+}
+#header li {
+	font-size: 12px;
+	margin-left: 12px;
+	float: right;
+}
+#header a:link {
+	color: #f09;
+	text-decoration: none;
+}
+#header a:visited {
+    color: #f09;
+    text-decoration: none;
+}
+
+/*主体样式*/
+table {
+	border: 1px solid #808080;
+	border-collapse: collapse;
+	font-size: 12px;
+	margin: 0 auto;
+	width: 90%;
+}
+#content td,
+#content th {
+	border: 1px solid #808080;
+	line-height: 150%;
+}
+.title {
+	font-size: 18px;
+	font-weight: bold;
+}
+.caption {
+	background-image: url(http://www.qdjj.net/images/beijin1.gif);
+	text-align: center;
+}
+.theader {                       /*表头样式*/
+	background-color: #eee;
+	color: #003399;
+	text-align: left;
+	text-indent: 1em;
+	font-size: 13px;
+	line-height: 150%;
+}
+.left-td {
+	text-align: right;
+}
+.blue-font {           /*蓝色字体样式*/
+	color: #00f;
+}
+.submit {
+	width: 100%;
+	height: 85px;
+	text-align: center;
+	line-height: 85px;
+}
+.submit input {
+	cursor: pointer;
+}
+
+/*底部样式*/
+#footer {
+	width: 100%;
+	height: 45px;
+	text-align: center;
+	margin:0;
+	font-size: 12px;
+}
+#footer span {
+	font-size: 12px;
+	color: #666;
+}

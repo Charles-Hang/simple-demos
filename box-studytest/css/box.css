@@ -1,0 +1,112 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+/*正常盒子和怪异盒子对比*/
+#normal {
+	float: left;
+	margin: 50px;
+	margin-left: 180px;
+	padding: 50px;
+	width: 200px;
+	height: 200px;
+	background: #37827B;
+	border: 5px solid #999;
+}
+.normal-content {
+	width: 200px;
+	height: 200px;
+	background: #03A9F4;
+	text-indent: 2em;
+}
+#odd {
+	float: right;
+	margin: 50px;
+	margin-right: 180px;
+	padding: 50px;
+	width: 310px;
+	height: 310px;
+	background: #121212;
+	border: 5px solid #999;
+	box-sizing: border-box;
+}
+.odd-content {
+	width: 200px;
+	height: 200px;
+	background: #75B1CE;
+	text-indent: 2em;
+}
+.nor-odd {
+	text-indent: 7em;
+	clear: both;
+}
+/*弹性盒子水平分栏，排序*/
+#flex1 {
+	margin: 0 auto;
+	display: -webkit-flex;
+	width: 1100px;
+	height: 300px;
+	-webkit-flex-direction:row;
+	font-weight: bold;
+	font-size: 12px;
+}
+.first1 {
+	-webkit-flex-grow:1;
+	-webkit-order:2;
+	background: #E91E63;
+}
+.second1 {
+	-webkit-flex-grow:2;
+	-webkit-order:3;
+	background: #69D86E;
+}
+.third1 {
+	-webkit-flex-grow:3;
+	-webkit-order:1;
+	background:#4B4BEC;
+}
+/*弹性盒子垂直分栏，排序*/
+#flex2 {
+	margin: 0 auto;
+	display: -webkit-flex;
+	width: 1100px;
+	height: 500px;
+	-webkit-flex-direction:column;
+	font-size: 25px;
+	font-weight: bold;
+}
+.first2 {
+	-webkit-flex-grow:3;
+	-webkit-order:3;
+	background: #E91E63;
+}
+.second2 {
+	-webkit-flex-grow:2;
+	-webkit-order:1;
+	background: #69D86E;
+}
+.third2 {
+	-webkit-flex-grow:1;
+	-webkit-order:2;
+	background:#4B4BEC;
+}
+/*旧版弹性盒子居中布局+column分栏*/
+#article {
+	width: 90%;
+	margin: 20px auto 30px;
+	-webkit-column-count:3;
+	-webkit-column-rule-style: dashed;
+}
+.img-container {
+	float: left;
+	width: 250px;
+	height: 250px;
+	background: #ECB514;
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+}
+.img-container img {
+	width: 200px;
+	height: 200px;
+}

@@ -1,0 +1,95 @@
+/*消除内外边距*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*容器样式*/
+#container {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -150px 0 0 -150px;
+}
+
+/*十字架方块的统一样式*/
+.top,
+.left,
+.middle,
+.right,
+.buttom {
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    transition: transform 2s;
+}
+
+/*十字架中个方块的样式*/
+.top {
+    background-color: #2FEC83;
+    margin: 0 auto;
+    box-shadow: -5px 0 5px 0 #5DCAA1, 
+                0 -5px 5px 0 #5DCAA1, 
+                5px 0 5px 0 #5DCAA1;
+}
+.left {
+    background-color: #F439F7;
+    float: left;
+    box-shadow: -5px 0 5px 0 #C185DA,
+                0 -5px 5px 0 #C185DA, 
+                0 5px 5px 0 #C185DA;
+}
+.middle {
+    background-color: #00A6CC;
+    float: left;
+    position: relative;
+}
+.middle img {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.right {
+    background-color: #EBF736;
+    float: left;
+    box-shadow: 0 -5px 5px 0 #D2DC33, 
+                5px 0 5px 0 #D2DC33, 
+                0 5px 5px 0 #D2DC33;
+}
+.buttom {
+    background-color: #5A4E4E;
+    float: left;
+    margin-left: 100px;
+    box-shadow: -5px 0 5px 0 #453F48,  
+                0 5px 5px 0 #453F48,
+                5px 0 5px 0 #453F48;
+}
+
+/*十字架中各方块的动画样式：中心块x翻转，其他块绕中心块360度旋转*/
+#container:hover .top {
+    transform-origin: 50px 150px;
+    transform: rotate(360deg);
+}
+#container:hover .left {
+    transform-origin: 150px 50px;
+    transform: rotate(360deg);
+}
+#container:hover .middle {
+    transform: rotate3d(1, 0, 0, 360deg);
+}
+#container:hover .right {
+    transform-origin: -50px 50px;
+    transform: rotate(360deg);
+}
+#container:hover .buttom {
+    transform-origin: 50px -50px;
+    transform: rotate(360deg);
+}

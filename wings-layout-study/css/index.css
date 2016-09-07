@@ -1,0 +1,157 @@
+body,
+ul,
+li,
+dl,
+dt,
+dd,
+p {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: Verdana, Arial, '宋体';
+	font-size: 12px;
+	background: #f3f3f3;
+}
+dl {
+	margin-left: 15px;
+}
+dt {
+	font-weight: bold;
+	margin-top: 10px;
+}
+/*容器样式*/
+#wrapper {
+	width: 1129px;
+	margin: 0 auto;
+	text-align: left;
+	background: #fff;
+	box-shadow: 2px 1px 4px 2px #999;
+}
+/*头部样式*/
+header {
+	width: 1100px;
+	height: 145px;
+	margin: 0 auto;
+}
+header a {
+	display: block;
+	width: 1100px;
+	height: 90px;
+	background: url(../img/head_index.gif) top left no-repeat;
+}
+header nav li {
+	list-style: none;
+	float: left;
+	text-align: center;
+	height: 55px;
+	line-height: 55px;
+	font-size: 20px;
+	margin: 0 24px;
+	color: #797979;
+}
+/*中间主体样式*/
+#content {
+	width: 1100px;
+	margin: 0 auto;
+	font-family: '微软雅黑';
+	overflow: hidden;
+}
+#content a {
+	color: #AE4141;
+}
+/*中间部分样式*/
+#content .main-wrapper {
+	float: left;
+	width: 920px;
+}
+#content .main-content {
+	margin: 0 12px 0 192px;
+}
+.main-content div {
+	border-top: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+}
+.main-content p {
+	margin-top: 12px;
+}
+.main-content .content-top {
+	text-align: center;
+	padding-bottom: 20px;
+}
+.main-content .content-top h2 {
+	font-size: 20px;
+	margin-top: 20px;
+	font-weight: bold;
+}
+.main-content .content-top strong {
+	font-size: 14px;
+}
+.main-content .intro {
+	min-height: 118px;
+}
+.main-content .intro img {
+	float: left;
+}
+.main-content .intro h3 {
+	margin-top: 15px;
+}
+.main-content .how,
+.main-content .w3c-info {
+	padding-bottom: 20px;
+}
+/*左边导航样式*/
+#content .nav-left {
+	float: left;
+	width: 180px;
+	margin-left: -920px;
+	background: #ECECEC;
+	margin-bottom: -9999px;
+	padding-bottom: 9999px;
+}
+#content .nav-left p {
+	font-weight: bold;
+	color: #0479A7;
+	margin:10px 0 0 15px;
+}
+/*右边导航样式*/
+#content .sidebar {
+	float: left;
+	width: 180px;
+	background: #ECECEC;
+	margin-bottom: -9999px;
+	padding-bottom: 9999px;
+}
+#content .sidebar label {
+	margin-left: 8px;
+}
+#content .sidebar .search {
+	padding: 0;
+	border: 0;
+	width: 135px;
+	height: 20px;
+	margin-left: 8px;
+	display: inline-block;
+}
+#content .sidebar .submit {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	width: 25px;
+	height: 20px;
+	background: #AE4141;
+	text-align: center;
+	display: inline-block;
+}
+/*脚部样式*/
+footer {
+	clear: both;
+	width: 1100px;
+	height: 46px;
+	margin: 0 auto;
+	border: 10px solid #fff;
+	background: #b6b6b6;
+}
+footer p {
+	margin: 5px 10px 0 10px;
+}

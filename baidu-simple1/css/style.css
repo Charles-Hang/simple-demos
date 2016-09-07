@@ -1,0 +1,53 @@
+
+/*搜索主体样式*/
+#container {
+    width: 90%;
+    margin:50px auto;
+}
+
+#container img {
+	display: block;
+    width: 270px;
+    height: 129px;
+    margin:0 auto;
+}
+.form {
+	margin:20px auto;
+	text-align: center;
+}
+.text {
+	width: 560px;
+	height: 36px;
+}
+.button { 
+	width: 100px;
+	height: 36px;
+	font-size: 15px;
+	color: white;
+	background-color: #3385ff;
+	border: 1px solid #3385ff;
+}
+
+/*顶部索引样式*/
+.index {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	float: right;
+}
+.index li {
+	float: left;
+	margin-right: 20px;
+	list-style: none;
+}
+
+/*底部主体样式*/
+#footer {
+	width: 328px;
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	margin: 0 0 0 -164px; 
+	font-size: 13px;
+	color: #999;
+}

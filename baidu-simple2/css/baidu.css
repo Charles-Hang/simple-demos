@@ -1,0 +1,166 @@
+body {
+	margin: 0;
+	padding: 0;
+	font: 12px arial;
+}
+p {
+	margin: 0;
+	padding: 0;
+}
+/*头部导航样式*/
+header {
+	overflow: hidden;
+}
+nav {
+	float: right;
+	margin-top: 19px;
+	margin-right: 10px;
+}
+nav a {
+	float: left;
+	color: #333;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 24px;
+	margin-left: 20px;
+}
+nav .mo-pr {
+	display: inline-block;
+	width: 60px;
+	height: 23px;
+	line-height: 24px;
+	color: #fff;
+	background: #38f;
+	text-decoration: none;
+}
+
+/*主体样式
+.ipt-wr：搜索框包裹层
+.sub-wr：提交框包裹层*/
+#content {
+	text-align: center;
+	overflow: hidden;
+}
+#content img {
+	width: 270px;
+	height: 129px;
+}
+#content form {
+	width: 641px;
+	margin: 22px auto 0;
+}
+.ipt-wr {
+	float: left;
+	border: 1px solid #b6b6b6;
+	display: inline-block;
+	position: relative;
+	width: 540px;
+	height: 34px;
+	border-right-width: 0; 
+}
+.ipt-wr input {
+	position: absolute;
+	top: 5px;
+	left: 7px;
+	width: 500px;
+	height: 22px;
+	line-height: 22px;
+	border: 0;
+	outline: none;
+}
+.ipt-wr span {
+	position: absolute;
+	right: 11px;
+	top: 50%;
+	margin-top: -8px;
+	height: 16px;
+	width: 18px;
+	background: url(img/soutu_icons_6eead741.png) no-repeat;
+}
+.ipt-wr span:hover {
+	background: url(img/soutu_icons_6eead741.png) no-repeat 0 -21px;
+}
+.sub-wr {
+	float: left;
+	display: inline-block;
+	vertical-align: top;
+}
+.sub-wr input {
+	width: 100px;
+	height: 36px;
+	color: #fff;
+	font-size: 15px;
+	letter-spacing: 1px;
+	background: #3385ff;
+	border: 1px solid #3385ff;
+}
+
+/*底部样式
+.qrcode:二维码及信息包裹层
+.caption:右侧声明包裹层*/
+footer {
+	width: 678px;
+	position: absolute;
+	left: 50%;
+	bottom: 53px;
+	margin-left: -350px;
+	overflow: hidden;
+}
+footer div {
+	display: inline-block;
+}
+.qrcode {
+	margin-left: 33px;
+	line-height: 23px;
+}
+.qrcode  img {
+	float: left;
+	width: 60px;
+	height: 60px;
+}
+.qrcode b {
+	color: #666;
+	font-weight: bold;
+}
+.qrcode span {
+	color: #999;
+	letter-spacing: 1px;
+}
+.qrcode div {
+	float: left;
+	margin: 8px 0 0 10px;
+}
+.caption {
+	margin-left: 33px;
+}
+.caption p {
+	line-height: 22px;
+}
+.caption a,
+.caption span {
+	color: #999;
+}
+.pfirst .afirst {
+	margin-left: 0; 
+}
+.pfirst a {
+	margin-left: 62px;
+}
+.caption i {
+	display: inline-block;
+	width: 14px;
+	height: 17px;
+	overflow: hidden;
+	background: url(img/icons_0e814c16.png) no-repeat;
+}
+.psecond i {
+	background-position: -600px -96px;
+	position: relative;
+	top: 3px;
+}
+.pthird i {
+	background-position: -623px -96px;
+	position: relative;
+	top: 3px;
+	margin-right: 6px; 
+}
