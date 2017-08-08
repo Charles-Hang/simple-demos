@@ -1,0 +1,81 @@
+{{! 后台获取图片新闻子模板  }}
+<table class="table table-striped">
+	<thead class="news-thead">                      
+		<tr>
+			<td>id</td>
+			<td>标题</td>
+			<td>地址</td>
+			<td>图片</td>
+			<td>赞数</td>
+			<td>操作</td>
+		</tr>
+	</thead>
+	<tbody class="news-tbody">
+		{{#each dataImg}}
+			<tr data-id={{this.id}}>
+				<td class="data-id">{{this.id}}</td>
+				<td class="data-title">{{this.title}}</td>
+				<td class="data-url">{{this.url}}</td>
+				<td class="data-img">{{this.img}}</td>
+				<td class="data-praise">{{this.praise}}</td>
+				<td class="data-op">
+					<span data-id={{this.id}} data-toggle="modal" data-target="#myModal-2" class="data-fix" style="cursor: pointer;">修改</span>
+					<span data-id={{this.id}} data-toggle="modal" data-target="#myModal-3" class="data-delet" style="cursor: pointer;">删除</span>
+				</td>
+			</tr>
+		{{/each}}	
+	</tbody>
+</table>
+<span class="btn btn-primary data-insert insert-btn" data-toggle="modal" data-target="#myModal-2">插入</span>
+<script>
+	$('.data-fix').on('click',function(){
+	    var value = $(this).parent().parent();
+	    if ($(this).attr('data-target') == '#myModal-1') {
+	        $('#modal-confirm').attr('data-id', $(this).attr('data-id')).html('确认修改');
+	        $('#inputTitle').val(htmlspecialchars_decode($(value).find('.data-title').html()));
+	        $('#inputDes').val(htmlspecialchars_decode($(value).find('.data-des').html()));
+	        $('#inputUrl').val(htmlspecialchars_decode($(value).find('.data-url').html()));
+	        $('#inputImg1').val(htmlspecialchars_decode($(value).find('.data-img1').html()));
+	        $('#inputImg2').val(htmlspecialchars_decode($(value).find('.data-img2').html()));
+	        $('#inputImg3').val(htmlspecialchars_decode($(value).find('.data-img3').html()));
+	        $('#inputTime').val(transTime($(value).find('.data-time').html()));
+	        $('#inputType').val(htmlspecialchars_decode($(value).find('.data-type').html()));
+	    } else {
+	        $('#modal-confirm2').attr('data-id', $(this).attr('data-id')).html('确认修改');
+	        $('#inputTitle2').val(htmlspecialchars_decode($(value).find('.data-title').html()));
+	        $('#inputUrl2').val(htmlspecialchars_decode($(value).find('.data-url').html()));
+	        $('#inputImg').val(htmlspecialchars_decode($(value).find('.data-img').html()));
+	        $('#inputPraise').val(htmlspecialchars_decode($(value).find('.data-praise').html()));
+	    } 
+	});
+	$('.insert-btn').on('click',function(){
+		if ($(this).attr('data-target') == '#myModal-1') {
+			$('#modal-confirm').html('确认插入');
+	        $('#inputTitle').val('');
+	        $('#inputDes').val('');
+	        $('#inputUrl').val('');
+	        $('#inputImg1').val('');
+	        $('#inputImg2').val('');
+	        $('#inputImg3').val('');
+	        $('#inputTime').val('');
+	        $('#inputType').val('');
+	    } else {
+	    	$('#modal-confirm2').html('确认插入');
+            $('#inputTitle2').val('');
+            $('#inputUrl2').val('');
+            $('#inputImg').val('');
+            $('#inputPraise').val('');
+	    }
+	});
+	$('.data-delet').on('click',function(){
+		$('#btn-close').attr('data-id', $(this).attr('data-id'));
+	});
+	function htmlspecialchars_decode(str){           
+	    str = str.replace(/&amp;/g, '&'); 
+	    str = str.replace(/&lt;/g, '<');
+	    str = str.replace(/&gt;/g, '>');
+	    str = str.replace(/&quot;/g, "''");  
+	    str = str.replace(/&#039;/g, "'");  
+	    return str;  
+	}
+</script>

@@ -1,0 +1,51 @@
+{{#each data}}
+	{{#if this.img1}}
+		{{#if this.img3}}
+			<div class="news-box" data-url={{this.url}}>
+				<div class="news-text height-s">
+					<h1>{{this.title}}</h1>
+				</div>
+				<img class="tri-img first" src={{this.img1}}>
+				<img class="tri-img second" src={{this.img2}}>
+				<img class="tri-img last" src={{this.img3}}>
+				<span class="news-time">{{Date this.time}}</span>
+				<span class="{{typeStyle this.type}}">{{this.type}}</span>
+			</div>
+		{{else}}	
+			<div class="news-box" data-url={{this.url}}>
+				<img class="single-img" src={{this.img1}}>
+				<div class="news-text height-s" style="max-width: calc(100% - 107px);">
+					<h1>{{this.title}}</h1>
+					<p class="news-des">{{this.description}}</p>
+				</div>
+				<span class="news-time">{{Date this.time}}</span>
+				<span class="{{typeStyle this.type}}">{{this.type}}</span>
+			</div>
+		{{/if}}
+	{{else}}	
+		{{#if this.description}}
+			<div class="news-box" data-url={{this.url}}>
+				<div class="news-text height-l">
+					<h1>{{this.title}}</h1>
+					<span class="news-des">{{this.description}}</span>
+				</div>
+				<span class="news-time">{{Date this.time}}</span>
+				<span class="{{typeStyle this.type}}">{{this.type}}</span>
+			</div>
+		{{else}}
+			<div class="news-box-img" data-url={{this.url}}>
+				<img class="news-img" src={{this.img}}>
+				<div class="praise">{{this.praise}}</div>
+				<h2>{{this.title}}</h2>
+			</div>
+		{{/if}}
+	{{/if}}
+{{/each}}
+<script>
+	$('.news-box').on('click',function(){
+		window.open($(this).attr('data-url'));
+	});
+	$('.news-box-img').on('click',function(){
+		window.open($(this).attr('data-url'));
+	});
+</script>

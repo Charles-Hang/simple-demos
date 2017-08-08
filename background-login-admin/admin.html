@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>XXX学生管理系统</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/docs.min.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body>
+	<!-- 头部固定导航 -->
+    <header class="navbar navbar-inverse navbar-fixed-top clearfix">
+        <div class="container-fluid">
+            <div class="navbar-header"><span class="university"></span>
+                <div class="university-title">
+                    <p>XXX大学</p>
+                    <p>学生管理系统</p>
+                </div>
+            </div>
+            <ul class="nav navbar-nav hidden-xs">
+                <li><a href="#">我的信息</a></li>
+                <li><a href="#">教务中心</a></li>
+                <li><a href="#">我的学费</a></li>
+                <li><a href="#">资料中心</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right hidden-xs">
+                <li><a href="#">通知</a></li>
+                <li><a href="#">密码修改</a></li>
+                <li><a href="#">安全退出</a></li>
+            </ul>
+            <div class="dropdown visible-xs-block">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="glyphicon glyphicon-align-justify"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="#">个人中心</a></li>
+                    <li><a href="#">教务中心</a></li>
+                    <li><a href="#">学习中心</a></li>
+                    <li><a href="#">财务中心</a></li>
+                    <li><a href="#">教学系统</a></li>
+                    <li><a href="#">通知</a></li>
+                    <li><a href="#">密码修改</a></li>
+                    <li><a href="#">安全退出</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- 主体部分 -->
+    <div class="container-fluid content">
+        <div class="row">
+        	<!-- 左侧导航栏 -->
+            <div class="col-md-3 hidden-sm hidden-xs" role="complimentary">
+                <nav class="bs-docs-sidebar affix navbar-inverse">
+                    <ul id="nav" class="nav bs-docs-sidebar">
+                        <li><a href="#">个人中心</a>
+                            <ul class="nav">
+                                <li><a href="#">我的信息</a></li>
+                                <li><a href="#">班级信息</a></li>
+                                <li><a href="#">短信息</a></li>
+                                <li><a href="#">学院通知</a></li>
+                                <li><a href="#">我的异议</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">教务中心</a>
+                            <ul class="nav">
+                                <li>
+                                    <a href="#">我的报考</a>
+                                </li>
+                                <li>
+                                    <a href="#">我的成绩</a>
+                                </li>
+                                <li>
+                                    <a href="#">我的书籍</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">学习中心</a>
+                            <ul class="nav">
+                                <li><a href="#">资料下载</a></li>
+                                <li><a href="#">学习历程</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">财务中心</a>
+                            <ul class="nav">
+                                <li><a href="#">我的财务</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">教学系统</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- 右侧内容 -->
+            <div class="col-md-9" role="main">
+                <div class="page-header">
+                    <h4>我的学习中心</h4>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="thumbnail">
+                            <div class="caption clearfix">
+                                <h4>在线班主任</h4>
+                                <img src="img/teacher.png" alt="teacher">
+                                <ul>
+                                    <li>您共有<strong>0</strong>条通知消息，<strong>0</strong>条未读</li>
+                                    <li>共有<strong>0</strong>条短信息、<strong>0</strong>个投诉、<strong>0</strong>个异议</li>
+                                    <li>有<strong>0</strong>个投诉、<strong>0</strong>个异议、<strong>0</strong>条短信息未处理</li>
+                                </ul>
+                                <p><a href="#" class="btn btn-primary pull-right" role="button">给班主任发消息</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="thumbnail">
+                            <div class="caption clearfix">
+                                <h4>教务中心</h4>
+                                <img src="img/book.png" alt="book">
+                                <ul>
+                                    <li>你有<strong>0</strong>门课程要考</li>
+                                    <li>你已通过<strong>14</strong>门课程 共有<strong>14</strong>门</li>
+                                    <li>已经发放了<strong>0</strong>本书籍</li>
+                                </ul>
+                                <p><a href="#" class="btn btn-primary pull-right" role="button">进入教务中心</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="thumbnail">
+                            <div class="caption clearfix">
+                                <h4>考试中心</h4>
+                                <img src="img/exam.png" alt="exam">
+                                <ul>
+                                    <li>模拟考试</li>
+                                    <li>章节练习</li>
+                                    <li>网上作业</li>
+                                </ul>
+                                <p><a href="#" class="btn btn-primary pull-right" role="button">进入考试中心</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="thumbnail">
+                            <div class="caption clearfix">
+                                <h4>财务中心</h4>
+                                <img src="img/finance.png" alt="finance">
+                                <ul>
+                                    <li>你应交<strong>4600</strong>元，实交<strong>1600</strong>元</li>
+                                    <li>欠费<strong>3000</strong>元</li>
+                                    <li>你总共有<strong>3</strong>条财务记录需要确认</li>
+                                </ul>
+                                <p><a href="#" class="btn btn-primary pull-right" role="button">进入财务中心</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    $('#nav > li').click(function(e) {
+        e.preventDefault();
+        $('#nav > li').removeClass('active');
+        $(this).addClass('active');
+    });
+    </script>
+</body>
+
+</html>

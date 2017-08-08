@@ -1,0 +1,64 @@
+body {
+	background: url(../img/backgrounddd.jpg);
+}
+/*登录框样式*/
+.signin {
+	width: 380px;
+    height: 330px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /*margin-left: -190px;
+    margin-top: -140px;*/
+    transform: translateX(-50%) translateY(-50%);
+    border-top: 1px solid #000000;
+    background: #CEEFEC;
+    box-shadow: 0 1px 2px 2px #72AD99;
+}
+.wrap {
+	width: 380px;
+	height: 330px;
+	position: relative;
+}
+.wrap h3 {
+	margin-top: 50px;
+	text-align: center;
+}
+.wrap .circle {
+	width: 99.47px;
+    height: 99.47px;
+    border-radius: 50%;
+    position: absolute;
+    top: -52px;
+    left: 50%;
+    margin-left: -49.73px;
+    background: #CEEFEC;
+    box-shadow: 0 0 10px 2px #2D6B6B;
+}
+.wrap img {
+	display: block;
+	width: 90px;
+	margin: 0 auto;
+}
+.form-horizontal .form-group {
+	margin-left: 0;
+	margin-right: 0;
+}
+.form-group .col-sm-2,
+.form-group .col-sm-10 {
+	padding-right: 8px;
+	padding-left: 0;
+}
+.form-horizontal .btn {
+	display: block;
+	background: #25ADB5;
+	width: 100%;
+	font-weight: 600;
+}
+.form-horizontal .btn a {
+	color: #fff;
+	display: block;
+}
+.form-horizontal .btn:hover {
+	background: #1E9FA7;
+}

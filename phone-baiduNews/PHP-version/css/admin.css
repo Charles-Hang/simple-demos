@@ -1,0 +1,91 @@
+body {
+	padding-top: 71px;
+}
+/*头部样式*/
+header .university {
+	display: inline-block;
+    background: url(../img/news-logo.jpg) no-repeat;
+    width: 60px;
+    height: 60px;
+    background-size: 60px 60px;
+    margin-top: 5px;
+    border-radius: 10px; 
+}
+header .container-fluid .university-title {
+	display: inline-block;
+    color: #fff;
+    margin-top: 10px;
+    vertical-align: top;
+}
+header .container-fluid .nav {
+	margin-top: 11px;
+}
+.dropdown.visible-xs-block {
+	position: absolute;
+	right: 10px;
+	top: 19px;
+}
+.dropdown .dropdown-menu {
+	left: -120px;
+}
+/*主体样式*/
+.content {
+	position: relative;
+}
+.content .affix {
+	top: 71px;
+	left: 0;
+	height: 100%;
+}
+#nav {
+	padding-left: 5px;
+}
+#nav li {
+	background: #333;
+}
+#nav li.active a {
+	background: #424040;
+}
+#nav li a {
+	font-size: 16px;
+	color: #808080;
+	line-height: 3;
+}
+@media screen and (min-width: 992px) {
+	.content .main {
+		margin-left: -41px;
+	}
+}
+.content h4 {
+	font-weight: bold;
+}
+.content .page-header {
+	margin: 0 0 20px 0;
+}
+.content .thumbnail img {
+	width: 80px;
+	height: 80px;
+	display: inline-block;
+	vertical-align: text-bottom;
+}
+.content .thumbnail ul {
+	margin-top: 20px;
+	display: inline-block;
+}
+.content td {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	max-width: 108px;
+}
+.content .data-title {
+	max-width: 150px;
+}
+.content .data-fix:hover,
+.content .data-delet:hover {
+	text-decoration: underline;
+	color: #f50;
+}
+.insert-box {
+	margin-bottom: 20px;
+}
