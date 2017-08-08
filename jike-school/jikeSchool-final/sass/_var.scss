@@ -1,0 +1,54 @@
+$gr: #35b558;
+
+%p-re {
+	position: relative;
+}
+%f12 {
+	font-size: 12px;
+}
+%f14 {
+	font-size: 14px;
+}
+%clear {
+	content: '';
+	display: table;
+	clear: both;
+}
+%telli {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+@mixin po($po, $top: 0, $left: 0) {
+	@if $po == 're' {
+		position: relative;
+		top: $top;
+		left: $left;
+	}
+	@if $po == 'ab' {
+		position: absolute;
+		top: $top;
+		left: $left;
+	}
+}
+@mixin bgp($url,$x: 0, $y: 0, $repeat: no-repeat) {
+	background: url($url) $x $y $repeat;
+}
+@mixin dwh($display,$width: 0,$height: 0) {
+	@if $display == 'b' {
+		display: block;
+		width: $width;
+		height: $height;
+	}
+	@if $display == 'ib' {
+		display: inline-block;
+		width: $width;
+		height: $height;
+	}
+	@if $display == 'no' {
+		display: none;
+		width: $width;
+		height: $height;
+	}
+}
